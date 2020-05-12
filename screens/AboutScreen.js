@@ -10,7 +10,7 @@ const openLink = async (url) => {
     if (supported) {
         // Opening the link with some app, if the URL scheme is "http" the web link should be opened
         // by some browser in the mobile
-        await Linking.openURL(url);
+        await Linking.openURL(url); 
     } else {
         Alert.alert(`Sorry, we are unable to open this url. ${url}`);
     }
